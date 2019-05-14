@@ -1,7 +1,7 @@
 ### Setup
 * Fork, Clone, npm install, npm start
 * npm start will bring up the web page, it will not start the server
-* You will need a database setup in mlab
+* You will need a database setup either locally or in the cloud
 * you need to start the server manually
 * Use postman to test your server, don't rely on the web page which is just for show.
 
@@ -13,7 +13,7 @@ Your company's front end team has completed a business dashboard requested by ma
 * npm install express and body-parser
 * server/index.js
 * listen on port 3001
-* connect to your mlab database
+* connect to your database
 
 ### Routes
 * create get routes.
