@@ -25,7 +25,6 @@ Your company's front end team has completed a business dashboard requested by ma
   * /tickets
 
 ### Database
-* use mlab to create a database
 * add 3 collections: messages, tasks, orders
 
 
