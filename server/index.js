@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const messageRoutes = require('../routes/messages');
 const orderRoutes = require('../routes/orders');
 const taskRoutes = require('../routes/tasks');
+const foxesRoutes = require('../routes/foxes')
 require('dotenv').config();
 
 const thePort = 3001;
@@ -12,7 +13,7 @@ let app = express();
 
 app.use(bodyParser.json());
 app.use(express.static('public'));
-app.use(messageRoutes, orderRoutes, taskRoutes);
+app.use(messageRoutes, orderRoutes, taskRoutes, foxesRoutes);
 
 app.listen(thePort, (err) => {
     if (err) {
