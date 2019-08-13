@@ -3,9 +3,9 @@
 const TaskModel = require('../models/TaskModel');
 
 exports.list = function list(req, res) {
-    TaskModel.find((e, v) => {
-        if (e) return console.log(e)
-        return res.json(v);
+    TaskModel.find((err, tasks) => {
+        if (err) return console.log(err)
+        return res.json(tasks);
     });
 };
 exports.create = function create(req, res) {

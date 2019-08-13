@@ -4,8 +4,8 @@ const OrderModel = require('../models/OrderModel');
 
 exports.list = function list(req, res) {
     OrderModel.find(function (err, orders) {
-        if (e) return console.log(e)
-        return res.json(v);
+        if (err) return console.log(err)
+        return res.json(orders);
     });
 };
 exports.create = function create(req, res) {

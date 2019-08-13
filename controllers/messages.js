@@ -1,11 +1,11 @@
 `use strict`
 
-const MessageModel = require('../models/MesssageModel');
+const MessageModel = require('../models/MessageModel');
 
 exports.list = function list(req, res) {
     MessageModel.find(function (err, messages) {
-        if (e) return console.log(e)
-        return res.json(v);
+        if (err) return console.log(err)
+        return res.json(messages);
     });
 };
 exports.create = function create(req, res) {

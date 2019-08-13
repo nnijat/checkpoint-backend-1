@@ -9,6 +9,6 @@ let orderSchema = new mongoose.Schema({
     amount: Number
 });
 
-let Order = mongoose.model('Order', orderSchema);
+let Order = mongoose.model('order', orderSchema);
 
 module.exports = Order
